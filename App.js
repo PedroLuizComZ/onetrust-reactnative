@@ -81,6 +81,9 @@ const App = () => {
               </TouchableOpacity>
             </>
           )}
+          <Text style={styles.textLabel}>
+            {isConsented ? 'Com Consentimento' : 'Sem consentimento'}
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -101,6 +104,13 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontSize: 20,
     marginTop: 50,
+    textAlign: 'center',
+  },
+  textLabel: {
+    color: Colors.white,
+    fontSize: 30,
+    marginTop: 50,
+    marginBottom: 50,
     textAlign: 'center',
   },
   btnAction: {
